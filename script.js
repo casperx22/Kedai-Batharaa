@@ -1,17 +1,17 @@
 // 1. Data Menu Kopi Shop
 const menuData = [
-    { name: "Americano", category: "coffee", price: 8.000, desc: "Espresso dengan air panas." },
-     { name: "Kopi Butter", category: "coffee", price: 15.000, desc: "Minuman kopi yang dicampur dengan sepotong butter, menghasilkan rasa yang creamy, dan sedikit gurih,." },
-    { name: "Es Kopi Tiramisu", category: "coffee", price: 12.000 , desc: "Minuman kopi dingin berbahan espresso yang dipadukan dengan susu krim tiramisu." },
-    { name: "Es Cappuccino", category: "coffee", price: 12.000, desc: "Minuman kopi dingin berbahan espresso, susu, dan foam yang menghasilkan rasa creamyc." },
-    { name: "Kopi Susu Gula Aren", category: "coffee", price: 15.000, desc: "Latte manis dengan sirup gula aren lokal." },
-    { name: "Matcha Latte", category: "noncoffee", price: 14.000, desc: "Teh hijau bubuk premium dengan susu." },
-    { name: "Red Velvet", category: "noncoffee", price: 14.000, desc: "Minuman cokelat merah dengan cream cheese." },
-    { name: "Cookies and cream", category: "noncoffee", price: 14.000, desc: "Minuman manis dan creamy dengan potongan biskuit cokelat." },
-    { name: "Chocholate ", category: "noncoffe ", price: 35000, desc: "Minuman manis dan creamy berbahan bubuk atau lelehan coklat yang dicampur susu." },
-    { name: "Cireng Ayam Suwir", category: "food", price: 10.000, desc: "camilan berbahan adonan aci yang digoreng renyah dan diisi ayam suwir." },
-    { name: "French Fries", category: "food", price: 10.000, desc: "Kentang goreng klasik." },
-    { name: "Mix Platter", category: "food", price: 12.000, desc: "Berisi berbagai jenis camilan seperti kentang goreng, nugget, sosis, chicken wings, dll." }
+    { name: "Americano", category: "coffee", price: 8000, desc: "Espresso dengan air panas." },
+     { name: "Kopi Butter", category: "coffee", price: 15000, desc: "Minuman kopi yang dicampur dengan sepotong butter, menghasilkan rasa yang creamy, dan sedikit gurih,." },
+    { name: "Es Kopi Tiramisu", category: "coffee", price: 12000 , desc: "Minuman kopi dingin berbahan espresso yang dipadukan dengan susu krim tiramisu." },
+    { name: "Es Cappuccino", category: "coffee", price: 12000, desc: "Minuman kopi dingin berbahan espresso, susu, dan foam yang menghasilkan rasa creamyc." },
+    { name: "Kopi Susu Gula Aren", category: "coffee", price: 15000, desc: "Latte manis dengan sirup gula aren lokal." },
+    { name: "Matcha Latte", category: "noncoffee", price: 14000, desc: "Teh hijau bubuk premium dengan susu." },
+    { name: "Red Velvet", category: "noncoffee", price: 14000, desc: "Minuman cokelat merah dengan cream cheese." },
+    { name: "Cookies and cream", category: "noncoffee", price: 14000, desc: "Minuman manis dan creamy dengan potongan biskuit cokelat." },
+    { name: "Chocholate ", category: "noncoffe ", price: 12000, desc: "Minuman manis dan creamy berbahan bubuk atau lelehan coklat yang dicampur susu." },
+    { name: "Cireng Ayam Suwir", category: "food", price: 10000, desc: "camilan berbahan adonan aci yang digoreng renyah dan diisi ayam suwir." },
+    { name: "French Fries", category: "food", price: 10000, desc: "Kentang goreng klasik." },
+    { name: "Mix Platter", category: "food", price: 12000, desc: "Berisi berbagai jenis camilan seperti kentang goreng, nugget, sosis, chicken wings, dll." }
   
 ];
 
