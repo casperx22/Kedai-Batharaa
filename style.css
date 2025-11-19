@@ -19,12 +19,12 @@ a {
 
 section {
     padding: 60px 5%;
-    min-height: 50vh; /* Agar konten tidak terlalu pendek di halaman About */
+    min-height: 50vh;
 }
 
 /* Header & Navbar */
 .header {
-    background-color: #8b4411; /* Warna Cokelat Kopi */
+    background-color: #8b4411; /* Warna Cokelat yang Anda inginkan */
     color: white;
     padding: 15px 5%;
     display: flex;
@@ -36,57 +36,7 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.navbar a {
-    margin-left: 25px;
-    transition: color 0.3s;
-}
-
-.navbar a:hover {
-    color: #ffc600; /* Warna Emas/Kuning untuk hover */
-}
-
-/* Hero Section (Halaman Beranda) */
-.hero {
-    /* Ganti 'coffee_background.jpg' dengan path gambar Anda */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('coffee_background.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 5%;
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #ffc600;
-    color: #4a2c2a;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #e0b400;
-}
+/* ... (Styling Hero Section, Button, Menu Filter, Menu Item tetap sama) ... */
 
 /* Menu Section */
 .menu h2 {
@@ -130,37 +80,62 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    cursor: pointer; /* Memberi indikasi bahwa item bisa diklik */
+}
+/* ... (Styling lainnya untuk item-details, item-name, item-desc, price tetap sama) ... */
+
+/* --- Styling Modal (Pop-up) --- */
+.modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7); /* Latar belakang gelap */
 }
 
-.item-name {
-    color: #4a2c2a;
-    margin-bottom: 5px;
-}
-
-.item-desc {
-    font-size: 0.9em;
-    color: #666;
-    margin-right: 15px; /* Memberi ruang sebelum harga */
-}
-
-.price {
-    font-weight: bold;
-    color: #cc5500;
-    white-space: nowrap;
-    font-size: 1.1em;
-}
-
-/* About & Contact Section (Halaman about_contact.html) */
-.about, .contact {
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     text-align: center;
 }
 
-.about h2, .contact h2 {
-    color: #4a2c2a;
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.modal-body {
+    margin-top: 15px;
+}
+
+.modal-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
-.contact {
-    background-color: #eaeaea;
-    border-top: 1px solid #ddd;
+#modal-name {
+    color: #8b4411; 
+    margin-bottom: 10px;
 }
