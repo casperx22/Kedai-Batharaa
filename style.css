@@ -1,50 +1,75 @@
-/* Hero Section (Halaman Beranda) */
-.hero {
-    /* ... (Properti Flexbox untuk pemusatan tetap dipertahankan) ... */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('coffee_background.jpg') no-repeat center center/cover;
+/* Styling Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 60px 5%;
+    min-height: 50vh;
+}
+
+/* Container untuk Memusatkan Konten */
+.container {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Pemusatan horizontal */
+    padding: 0 20px; /* Padding samping untuk tampilan mobile */
+}
+
+/* Header & Navbar (Global) */
+.header {
+    background-color: #8b4411; /* Warna Cokelat Kopi yang Konsisten */
     color: white;
-    text-align: center; 
-    padding: 100px 5%;
-    min-height: 70vh;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    /* Memberi sedikit transisi agar perubahan terlihat halus jika ada efek tambahan */
-    transition: all 0.5s ease;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.hero h1 {
-    font-size: 3.5em; /* Ukuran lebih besar */
-    margin-bottom: 15px;
-    /* Efek Menarik: Bayangan Teks (Text Shadow) */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-    /* Memberi jarak antar huruf */
-    letter-spacing: 3px; 
-    /* Garis pemisah tipis di bawah judul */
-    padding-bottom: 10px;
-    border-bottom: 2px solid #ffc600; /* Warna kuning emas */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.hero p {
-    font-size: 1.4em; /* Ukuran lebih besar */
-    margin-bottom: 30px;
-    /* Memberi bayangan pada teks paragraf */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    /* Memberi jarak antar huruf agar mudah dibaca */
-    letter-spacing: 1px;
-    font-style: italic; /* Sedikit miring */
+.navbar a {
+    margin-left: 25px;
+    transition: color 0.3s;
 }
 
+.navbar a:hover {
+    color: #ffc600; /* Warna Emas/Kuning untuk hover */
+}
+
+/* Tombol (Button Styling Global) */
 .btn {
-    /* ... (Styling Tombol tetap sama) ... */
-    padding: 12px 25px;
-    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-/* ... (Styling Hero Section, Button, Menu Filter, Menu Item tetap sama) ... */
-
-/* Menu Section */
+/* Menu Section (Di halaman menu.html) */
 .menu h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -73,6 +98,8 @@
 }
 
 .menu-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
@@ -86,13 +113,45 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    cursor: pointer; /* Memberi indikasi bahwa item bisa diklik */
+    cursor: pointer;
 }
-/* ... (Styling lainnya untuk item-details, item-name, item-desc, price tetap sama) ... */
+
+.item-name {
+    color: #4a2c2a;
+    margin-bottom: 5px;
+}
+
+.item-desc {
+    font-size: 0.9em;
+    color: #666;
+    margin-right: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #cc5500;
+    white-space: nowrap;
+    font-size: 1.1em;
+}
+
+/* About & Contact Section (Di halaman about_contact.html) */
+.about, .contact {
+    text-align: center;
+}
+
+.about h2, .contact h2 {
+    color: #4a2c2a;
+    margin-bottom: 15px;
+}
+
+.contact {
+    background-color: #eaeaea;
+    border-top: 1px solid #ddd;
+}
 
 /* --- Styling Modal (Pop-up) --- */
 .modal {
-    display: none; /* Tersembunyi secara default */
+    display: none;
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -100,7 +159,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.7); /* Latar belakang gelap */
+    background-color: rgba(0,0,0,0.7);
 }
 
 .modal-content {
@@ -144,4 +203,12 @@
 #modal-name {
     color: #8b4411; 
     margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; 
+    padding: 20px 0; 
+    background-color: #333; 
+    color: white;
 }
