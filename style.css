@@ -1,39 +1,45 @@
-/* Styling Global */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-section {
-    padding: 60px 5%;
-    min-height: 50vh;
-}
-
-/* Header & Navbar */
-.header {
-    background-color: #8b4411; /* Warna Cokelat yang Anda inginkan */
+/* Hero Section (Halaman Beranda) */
+.hero {
+    /* ... (Properti Flexbox untuk pemusatan tetap dipertahankan) ... */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('coffee_background.jpg') no-repeat center center/cover;
     color: white;
-    padding: 15px 5%;
+    text-align: center; 
+    padding: 100px 5%;
+    min-height: 70vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    /* Memberi sedikit transisi agar perubahan terlihat halus jika ada efek tambahan */
+    transition: all 0.5s ease;
+}
+
+.hero h1 {
+    font-size: 3.5em; /* Ukuran lebih besar */
+    margin-bottom: 15px;
+    /* Efek Menarik: Bayangan Teks (Text Shadow) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    /* Memberi jarak antar huruf */
+    letter-spacing: 3px; 
+    /* Garis pemisah tipis di bawah judul */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffc600; /* Warna kuning emas */
+}
+
+.hero p {
+    font-size: 1.4em; /* Ukuran lebih besar */
+    margin-bottom: 30px;
+    /* Memberi bayangan pada teks paragraf */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    /* Memberi jarak antar huruf agar mudah dibaca */
+    letter-spacing: 1px;
+    font-style: italic; /* Sedikit miring */
+}
+
+.btn {
+    /* ... (Styling Tombol tetap sama) ... */
+    padding: 12px 25px;
+    font-size: 1.1em;
 }
 
 /* ... (Styling Hero Section, Button, Menu Filter, Menu Item tetap sama) ... */
